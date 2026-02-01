@@ -1,16 +1,24 @@
 # Interview Preparation Framework
 
+> **Общее время подготовки:** ~1-2 недели интенсивной подготовки
+
 Полный фреймворк подготовки к интервью в Google для Software Engineer.
 
 ---
 
-## Два раздела
+## Три раздела
 
 ### 📋 [Behavioral (Googleyness & Leadership)](behavioral/START-HERE.md)
 Подготовка к behavioral раунду: истории, ответы на вопросы, STAR метод.
 
 ### 💻 [Algorithms & Data Structures](algorithms/START-HERE.md)
 Алгоритмы и структуры данных: определения, сложности, когда использовать.
+
+### 🏗️ [System Design](system-design/START-HERE.md)
+Проектирование масштабируемых систем: компоненты, паттерны, типовые системы.
+
+### 📅 [Недельный план подготовки](WEEKLY-PLAN.md)
+Структурированный план на 1-2 недели с ежедневными задачами.
 
 ---
 
@@ -39,13 +47,32 @@ behavioral/
 algorithms/
 ├── START-HERE.md                    ← Начни здесь
 ├── COMPLETE-ALGORITHMS-GUIDE.md     ← Все алгоритмы (ГЛАВНЫЙ ФАЙЛ)
-├── by-category/                     ← Детальные гайды (11 категорий)
+├── LEETCODE-PRACTICE.md             ← 75+ задач для практики (NEW!)
+├── by-category/                     ← Детальные гайды (13 категорий)
 ├── data-structures/                 ← Структуры данных (7 файлов)
 ├── cheatsheets/
 │   ├── big-o-cheatsheet.md         ← Сложности
 │   ├── pattern-recognition.md      ← Как выбрать алгоритм
 │   └── quick-reference.md          ← Краткая справка
 └── self-test.md                     ← 50 вопросов самопроверки
+```
+
+### System Design
+
+```
+system-design/
+├── START-HERE.md                    ← Начни здесь
+├── COMPLETE-SYSTEM-DESIGN-GUIDE.md  ← Полное руководство (ГЛАВНЫЙ ФАЙЛ)
+├── topics/                          ← Детальные гайды
+│   ├── 01-fundamentals.md          ← CAP, ACID, latency
+│   ├── 02-databases.md             ← SQL vs NoSQL, sharding
+│   ├── 03-caching.md               ← Redis, стратегии
+│   ├── 04-load-balancing.md        ← L4/L7, алгоритмы
+│   ├── 05-messaging.md             ← Kafka, RabbitMQ
+│   └── 06-common-systems.md        ← URL shortener, Chat и др.
+└── cheatsheets/
+    ├── design-template.md          ← Шаблон для интервью
+    └── quick-reference.md          ← Быстрая справка
 ```
 
 ---
@@ -155,7 +182,9 @@ interview_preparation_framework/
 │   │   ├── 08-backtracking.md
 │   │   ├── 09-two-pointers.md
 │   │   ├── 10-sliding-window.md
-│   │   └── 11-string-algorithms.md
+│   │   ├── 11-string-algorithms.md
+│   │   ├── 12-bit-manipulation.md
+│   │   └── 13-math-algorithms.md
 │   ├── data-structures/
 │   │   ├── arrays-strings.md
 │   │   ├── linked-lists.md
@@ -169,6 +198,22 @@ interview_preparation_framework/
 │   │   ├── pattern-recognition.md
 │   │   └── quick-reference.md
 │   └── self-test.md
+│
+├── system-design/                   ← System Design (NEW!)
+│   ├── START-HERE.md
+│   ├── COMPLETE-SYSTEM-DESIGN-GUIDE.md
+│   ├── topics/
+│   │   ├── 01-fundamentals.md
+│   │   ├── 02-databases.md
+│   │   ├── 03-caching.md
+│   │   ├── 04-load-balancing.md
+│   │   ├── 05-messaging.md
+│   │   └── 06-common-systems.md
+│   └── cheatsheets/
+│       ├── design-template.md
+│       └── quick-reference.md
+│
+├── WEEKLY-PLAN.md                   ← Недельный план (NEW!)
 │
 └── shared/
     └── resources/
@@ -218,18 +263,39 @@ interview_preparation_framework/
 - [ ] Знаю Big-O для основных алгоритмов
 - [ ] Могу выбрать правильный подход по типу задачи
 - [ ] Пройден self-test на 40+/50
+- [ ] Решено 50+ задач на LeetCode
+
+### System Design
+- [ ] Знаю ACED фреймворк для design interview
+- [ ] Могу спроектировать 3+ типовые системы
+- [ ] Понимаю CAP теорему и trade-offs
+- [ ] Знаю когда использовать SQL vs NoSQL, кэширование, очереди
 
 ---
 
 ## Начни сейчас
 
-**Behavioral:**
-1. Открой [`behavioral/START-HERE.md`](behavioral/START-HERE.md)
-2. Прочитай [`behavioral/COMPLETE-ANSWERS-GUIDE.md`](behavioral/COMPLETE-ANSWERS-GUIDE.md)
+### Рекомендуемый порядок
 
-**Algorithms:**
-1. Открой [`algorithms/START-HERE.md`](algorithms/START-HERE.md)
-2. Прочитай [`algorithms/COMPLETE-ALGORITHMS-GUIDE.md`](algorithms/COMPLETE-ALGORITHMS-GUIDE.md)
+1. **Сначала:** Прочитай [`WEEKLY-PLAN.md`](WEEKLY-PLAN.md) — структурированный план
+2. **Behavioral:** [`behavioral/START-HERE.md`](behavioral/START-HERE.md)
+3. **Algorithms:** [`algorithms/START-HERE.md`](algorithms/START-HERE.md)
+4. **System Design:** [`system-design/START-HERE.md`](system-design/START-HERE.md)
+
+### Если мало времени (3 дня)
+
+| День | Фокус | Файлы |
+|------|-------|-------|
+| 1 | Behavioral | `COMPLETE-ANSWERS-GUIDE.md`, `stories-compressed.md` |
+| 2 | Algorithms | `COMPLETE-ALGORITHMS-GUIDE.md`, `big-o-cheatsheet.md` |
+| 3 | System Design + Review | `COMPLETE-SYSTEM-DESIGN-GUIDE.md`, self-tests |
+
+### Если очень мало времени (1 день)
+
+1. `behavioral/cheatsheets/master-cheatsheet.md`
+2. `algorithms/cheatsheets/quick-reference.md`
+3. `system-design/cheatsheets/quick-reference.md`
+4. `behavioral/interview-day/quick-review.md`
 
 ---
 
