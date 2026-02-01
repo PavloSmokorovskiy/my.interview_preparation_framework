@@ -1,5 +1,7 @@
 # START HERE: Алгоритмы за 5 минут
 
+> **Время изучения:** ~5 минут (этот файл), ~3-4 часа (полный раздел Algorithms)
+
 **Цель:** Знать, что существует. Понимать, когда применять. Не услышать про алгоритм впервые на собеседовании.
 
 ---
@@ -12,7 +14,7 @@ algorithms/
 ├── START-HERE.md                    ← Ты здесь
 ├── COMPLETE-ALGORITHMS-GUIDE.md     ← ГЛАВНЫЙ ФАЙЛ (все алгоритмы)
 │
-├── by-category/                     ← Детальные гайды
+├── by-category/                     ← Детальные гайды (13 категорий)
 │   ├── 01-sorting.md               ← Сортировки
 │   ├── 02-searching.md             ← Поиск
 │   ├── 03-graphs.md                ← Графы (BFS, DFS, Dijkstra...)
@@ -23,7 +25,9 @@ algorithms/
 │   ├── 08-backtracking.md          ← Перебор с возвратом
 │   ├── 09-two-pointers.md          ← Два указателя
 │   ├── 10-sliding-window.md        ← Скользящее окно
-│   └── 11-string-algorithms.md     ← Строковые алгоритмы
+│   ├── 11-string-algorithms.md     ← Строковые алгоритмы
+│   ├── 12-bit-manipulation.md      ← Битовые операции
+│   └── 13-math-algorithms.md       ← Математические алгоритмы
 │
 ├── data-structures/                 ← Структуры данных
 │   ├── arrays-strings.md
@@ -103,6 +107,8 @@ O(n!)       — Факториал (перестановки)
 | **Two Pointers** | Массив, ищем пару | Two Sum (sorted) |
 | **Sliding Window** | Подмассив/подстрока | Max sum subarray |
 | **Backtracking** | Все комбинации | N-Queens, Subsets |
+| **Bit Manipulation** | Работа с битами | XOR, маски, степени 2 |
+| **Math** | Числовые задачи | GCD, простые числа, модульная арифметика |
 
 ---
 

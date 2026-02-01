@@ -1,5 +1,7 @@
 # START HERE: Быстрый старт за 5 минут
 
+> **Время изучения:** ~5 минут (этот файл), ~2-3 часа (полный раздел Behavioral)
+
 **У тебя меньше недели. Вот как использовать этот фреймворк эффективно.**
 
 ---
@@ -7,16 +9,16 @@
 ## Что здесь есть
 
 ```
-memorization/
+behavioral/
 │
 ├── COMPLETE-ANSWERS-GUIDE.md   ← ГЛАВНЫЙ ФАЙЛ (50+ готовых ответов)
-├── GOOGLEYNESS-DETAILED.md     ← 8 черт: 6+ вопросов на каждую (NEW!)
-├── LEADERSHIP-DETAILED.md      ← 5 сигналов: 6+ вопросов на каждый (NEW!)
+├── GOOGLEYNESS-DETAILED.md     ← 8 черт: 6+ вопросов на каждую
+├── LEADERSHIP-DETAILED.md      ← 5 сигналов: 6+ вопросов на каждый
 ├── START-HERE.md               ← Ты здесь
 │
 ├── cheatsheets/
 │   ├── master-cheatsheet.md    ← Всё на 3 страницах
-│   └── stories-compressed.md   ← 5 историй для заучивания
+│   └── stories-compressed.md   ← 6 историй для заучивания
 │
 ├── interview-day/
 │   ├── quick-review.md         ← 1 страница для утра интервью
@@ -41,12 +43,13 @@ memorization/
    - 8 черт: **A-H-B-D-O-H-I-C**
    - 5 сигналов: **I-I-M-R-D**
 
-3. **Запомни 5 историй:**
+3. **Запомни 6 историй:**
    - #1 Conflict: Hybrid архитектура
    - #2 Leadership: Frontend миграция
    - #3 Failure: Production incident
    - #4 Ambiguity: MVP за 6 недель
    - #5 Achievement: Cloud costs -$200K
+   - #6 Failure (backup): Wrong feature → customer validation
 
 ### День 3-4: Практика
 
