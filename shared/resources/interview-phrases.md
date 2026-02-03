@@ -314,10 +314,149 @@
 
 ---
 
+## 14. Приветствие и начало / Greeting and Opening
+
+### English:
+- "Hi, I'm [Name]. Nice to meet you!"
+- "Hello! Thank you for taking the time to speak with me today."
+- "Good morning/afternoon! I really appreciate this opportunity."
+- "Hi [Interviewer Name], it's great to finally meet you."
+- "Hello! I've been looking forward to this conversation."
+- "Thank you for having me. I'm excited to be here."
+- "Nice to meet you! I've heard great things about the team."
+
+### Русский:
+- "Здравствуйте, меня зовут [Имя]. Приятно познакомиться!"
+- "Добрый день! Спасибо, что нашли время поговорить со мной."
+- "Здравствуйте! Очень рад этой возможности."
+- "Привет, [Имя]! Рад наконец познакомиться."
+- "Добрый день! С нетерпением ждал этой встречи."
+- "Спасибо, что пригласили. Рад быть здесь."
+- "Приятно познакомиться! Много хорошего слышал о команде."
+
+---
+
+## 15. Проверка связи (Video Call) / Tech Check
+
+### English:
+- "Can you hear me okay?"
+- "Is my audio coming through clearly?"
+- "Can you see my screen alright?"
+- "Let me know if you have any issues hearing me."
+- "Should I adjust my camera or audio?"
+- "I can hear you perfectly. How about on your end?"
+- "Just making sure the connection is good before we start."
+- "Let me share my screen. Can you see it now?"
+- "I'll be coding in [IDE/editor]. Is that visible to you?"
+
+**Если есть технические проблемы / If there are tech issues:**
+- "I'm having a bit of trouble hearing you. Could you repeat that?"
+- "It seems we have some lag. Let me try turning off my camera."
+- "My internet seems unstable. Would it be okay if I turn off video?"
+- "I apologize for the technical difficulties. Let me reconnect."
+- "Would you mind if we switch to a phone call instead?"
+
+### Русский:
+- "Вы меня хорошо слышите?"
+- "Мой звук нормально проходит?"
+- "Мой экран видно?"
+- "Дайте знать, если будут проблемы со звуком."
+- "Нужно настроить камеру или звук?"
+- "Я вас прекрасно слышу. А у вас всё в порядке?"
+- "Просто проверяю связь перед началом."
+- "Сейчас расшарю экран. Видите?"
+- "Буду кодить в [IDE/редактор]. Вам видно?"
+
+**Если есть технические проблемы:**
+- "Немного плохо слышу. Можете повторить?"
+- "Кажется, есть задержка. Попробую выключить камеру."
+- "Интернет нестабильный. Можно без видео?"
+- "Извините за технические сложности. Сейчас переподключусь."
+- "Можем перейти на телефонный звонок, если удобно?"
+
+---
+
+## 16. Что сказать сразу после приветствия / Small Talk After Greeting
+
+### English:
+- "How's your day going so far?"
+- "I hope your week is going well."
+- "Thank you again for taking the time. I know you're busy."
+- "I'm really excited to learn more about the role and the team."
+- "Before we dive in, I just want to say I've really enjoyed reading about [company/product]."
+- "I'm ready whenever you are."
+- "How would you like to structure our time today?"
+
+**Ответы на small talk / Responding to small talk:**
+- "I'm doing great, thank you for asking!"
+- "Very well, thanks! Excited to be here."
+- "Pretty good! Looking forward to our conversation."
+- "Great, thanks! How about yourself?"
+
+### Русский:
+- "Как проходит ваш день?"
+- "Надеюсь, неделя идёт хорошо."
+- "Ещё раз спасибо за время. Знаю, что вы заняты."
+- "С интересом хочу узнать больше о позиции и команде."
+- "Прежде чем начнём — очень понравилось то, что читал о [компания/продукт]."
+- "Готов начать, когда вам удобно."
+- "Как хотите структурировать нашу встречу?"
+
+**Ответы на small talk:**
+- "Всё отлично, спасибо!"
+- "Очень хорошо, спасибо! Рад быть здесь."
+- "Хорошо! С нетерпением жду нашего разговора."
+- "Отлично, спасибо! А у вас как?"
+
+---
+
+## 17. Прощание и благодарность / Closing and Goodbye
+
+### English:
+- "Thank you so much for your time today."
+- "I really enjoyed our conversation."
+- "This was a great discussion. I learned a lot."
+- "Thank you for walking me through the problem. It was really interesting."
+- "I appreciate you sharing more about the team and the role."
+- "I'm even more excited about this opportunity after our talk."
+- "Please don't hesitate to reach out if you need anything else from me."
+- "I look forward to hearing from you."
+- "Have a great rest of your day!"
+- "It was wonderful meeting you. Take care!"
+
+**Если хотите уточнить следующие шаги / Asking about next steps:**
+- "What are the next steps in the process?"
+- "When can I expect to hear back?"
+- "Is there anything else you need from me at this stage?"
+- "Who should I reach out to if I have any follow-up questions?"
+
+### Русский:
+- "Большое спасибо за ваше время."
+- "Мне очень понравился наш разговор."
+- "Отличная дискуссия. Узнал много нового."
+- "Спасибо, что провели через задачу. Было очень интересно."
+- "Благодарю, что рассказали больше о команде и позиции."
+- "После нашего разговора ещё больше заинтересован в этой возможности."
+- "Если понадобится что-то ещё — обращайтесь."
+- "Буду ждать обратной связи."
+- "Хорошего дня!"
+- "Было приятно познакомиться. Всего доброго!"
+
+**Уточнить следующие шаги:**
+- "Какие следующие шаги?"
+- "Когда ожидать обратной связи?"
+- "Нужно ли что-то ещё от меня на этом этапе?"
+- "К кому обращаться, если будут вопросы?"
+
+---
+
 ## Quick Reference Card / Быстрая карточка
 
 | Ситуация | English | Русский |
 |----------|---------|---------|
+| Приветствие | "Nice to meet you!" | "Приятно познакомиться!" |
+| Проверка связи | "Can you hear me okay?" | "Вы меня хорошо слышите?" |
+| После приветствия | "How's your day going?" | "Как проходит ваш день?" |
 | Нужно время | "Let me think..." | "Дайте подумать..." |
 | Не понял | "Could you clarify...?" | "Можете уточнить...?" |
 | Предположение | "I'll assume that..." | "Предположу, что..." |
@@ -325,6 +464,8 @@
 | Проверка | "Am I on the right track?" | "Я на правильном пути?" |
 | Переход | "Moving on to..." | "Переходя к..." |
 | Итог | "So to summarize..." | "Итак, подводя итог..." |
+| Прощание | "Thank you for your time!" | "Спасибо за ваше время!" |
+| След. шаги | "What are the next steps?" | "Какие следующие шаги?" |
 
 ---
 
