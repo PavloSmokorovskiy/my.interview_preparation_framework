@@ -68,7 +68,7 @@
 >
 > **Learning:** "Above and beyond" isn't about working more hours. It's about seeing what needs to be done and doing it — even when it's not on your job description. The key: start small, prove value, earn resources for bigger impact.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Наши AWS расходы росли на 20% каждый квартал, приближаясь к $800K в год. Это обсуждалось на all-hands meetings, но конкретных действий не следовало. Я был в product feature team — cloud costs не были моей ответственностью.
 >
@@ -142,7 +142,7 @@
 >
 > **Learning:** Small inefficiencies that everyone tolerates can add up to massive waste. Taking initiative on these "paper cut" problems creates disproportionate value.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Заметил, что наш CI pipeline становился медленнее — builds, которые занимали 5 минут шесть месяцев назад, теперь занимали 15 минут. Никто официально не жаловался, но я слышал недовольство.
 >
@@ -201,7 +201,7 @@
 >
 > **Learning:** The best initiatives are contagious. I didn't mandate documentation — I modeled it, showed value, and made it easy. By the time I "proposed" the system, half the team was already doing it.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** У нашей команды не было structured way для sharing knowledge. Информация жила в головах людей. Когда кто-то был в отпуске, его область становилась black box.
 >
@@ -264,7 +264,7 @@
 >
 > **What I avoid:** Working on whatever seems interesting without connecting it to real value. Initiative is valuable when it serves the team, not just personal preferences.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > Использую три фильтра:
 >
@@ -326,7 +326,7 @@
 >
 > **Learning:** You don't need to own everything to improve it. Start with what's in your reach. If you solve part of the problem well, you earn credibility to influence the rest.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Наша on-call rotation была painful. Каждую неделю тот, кто был on-call, dreaded это. Unclear runbooks, noisy alerts, no escalation paths.
 >
@@ -395,7 +395,7 @@
 >
 > **Learning:** Initiative means being willing to fail. The key is failing small, learning fast, and maintaining credibility by being honest about what's not working.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > Это важный вопрос, потому что не каждая initiative успешна.
 >
@@ -495,7 +495,7 @@
 >
 > **Learning:** Changing minds isn't about winning arguments. It's about understanding concerns and addressing them. When you make people feel heard, they're more likely to hear you.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Мы проектировали data pipeline. Senior инженер с 10 годами опыта выступал за monolithic architecture. Я верил, что microservices будут scale лучше для нашей 10x growth target. Он outranked меня, и у него был track record успешных проектов.
 >
@@ -571,7 +571,7 @@
 >
 > **Learning:** Influence without authority requires empathy. You have to understand what people actually care about and show how your initiative serves their goals. It's not manipulation — it's finding genuine alignment.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Frontend migration требовала buy-in от 3 команд — никто мне не подчинялся, ни у кого migration не была priority.
 >
@@ -656,7 +656,7 @@
 >
 > Undermining decisions I disagree with helps no one.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > Я approach disagreements с senior engineers как learning opportunities сначала.
 >
@@ -743,7 +743,7 @@
 >
 > **Learning:** Consensus isn't about splitting the difference — it's about finding solutions that address underlying concerns. When you dig past positions to interests, agreement becomes possible.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Две команды имели conflicting approaches к shared service. Team A хотела rewrite для flexibility. Team B хотела keep it stable — они depended на его current behavior.
 >
@@ -832,7 +832,7 @@
 >
 > **Learning:** Pushing back on leadership isn't about saying no. It's about providing information they don't have and options they can evaluate. Leaders appreciate engineers who help them make better decisions.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Мой director установил aggressive deadline для major feature. По моей оценке, hitting его потребовал бы либо significant quality cuts, либо death march, который burn out команду.
 >
@@ -910,7 +910,7 @@
 >
 > **Learning:** Influence isn't about winning every time. It's about making your case clearly and then supporting the team decision. People trust engineers who fight for their views and then commit fully, more than engineers who won't let things go.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > Иногда не получается. Вот как я handle это:
 >
@@ -1014,7 +1014,7 @@
 >
 > **Learning:** Good mentorship teaches people to think, not just what to think. The goal is independence — they don't need you anymore. That's success.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Junior инженер в нашей команде, Alex, struggled с system design. Он мог implement features хорошо, но когда просили design что-то end-to-end, он терялся.
 >
@@ -1100,7 +1100,7 @@
 >
 > **Learning:** Good onboarding is an investment that pays dividends. The month I spent with Maria saved months of her struggling alone and asking random questions.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Наняли нового инженера, Maria, в нашу команду. Standard onboarding был "read the docs and ask questions." Вызвался быть её dedicated buddy.
 >
@@ -1196,7 +1196,7 @@
 >
 > **Result:** People tell me they learn from my reviews. That's the goal — not just better code, but better engineers.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > Стараюсь сделать code reviews learning experience, не judgment.
 >
@@ -1298,7 +1298,7 @@
 >
 > **Learning:** Knowledge sharing isn't just documentation or one talk. It's systematic transfer through multiple channels over time. The goal: making yourself not essential.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Я был единственным, кто understood нашу payment processing system deeply. Это был risk — если заболею или уйду, critical knowledge исчезнет.
 >
@@ -1389,7 +1389,7 @@
 >
 > **Learning:** Struggling teammates often have specific skill gaps, not fundamental problems. Finding and filling those gaps — while protecting their dignity — unlocks their potential.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Teammate, John, struggled to ship. Tasks, которые должны занимать дни, растягивались на недели. Он не просил help, и frustration building across the team.
 >
@@ -1468,7 +1468,7 @@
 >
 > The best engineers make themselves unnecessary in one role so they can take on the next challenge.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > Активно работаю над тем, чтобы eliminate myself как bottleneck. Вот как:
 >
@@ -1577,7 +1577,7 @@
 >
 > **Learning:** Driving results on complex projects is 20% technical and 80% organizational — removing obstacles, maintaining momentum, helping others succeed. The leader's job is to make it easy for everyone else to contribute.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Frontend migration project. Technical challenge был moderate — organizational challenge был extreme.
 >
@@ -1666,7 +1666,7 @@
 >
 > **Learning:** Tight deadlines require discipline about scope. The temptation is to build everything; the skill is building only what matters. Working backwards from the outcome keeps you focused.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** MVP project. 6 недель, чтобы построить B2B analytics product для customer demos. Unclear requirements. Один engineer (я). Нет existing infrastructure для B2B.
 >
@@ -1756,7 +1756,7 @@
 >
 > **Learning:** Failing projects often suffer from chaos, not capability. Restoring focus and realistic expectations creates momentum. Sometimes slowing down to stabilize is the fastest path forward.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Меня brought onto project 2 месяца in. Он уже был behind schedule, команда была demoralized, и leadership losing confidence.
 >
@@ -1849,7 +1849,7 @@
 >
 > **Learning:** Blockers are tests of creativity and initiative. The answer is almost never "wait." It's "find another way."
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > Мой принцип: never just wait.
 >
@@ -1943,7 +1943,7 @@
 >
 > **Learning:** When things go wrong, speed of recognition matters. Every day you delay acknowledging a problem is a day you can't fix it.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > Когда project не going well, follow specific approach:
 >
@@ -2068,7 +2068,7 @@
 >
 > **Learning:** For reversible decisions, optimize for speed of learning. We'd learn more from launching faster than from choosing the perfect technology. The "wrong" choice with ability to change beats the "right" choice that takes twice as long.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Для MVP project надо было decide между двумя technology approaches:
 > - Option A: Existing data stack (который знал хорошо, но heavyweight)
@@ -2165,7 +2165,7 @@
 >
 > **Learning:** The goal isn't eliminating uncertainty — it's making good decisions despite it. Be clear about what you don't know, and design your decision to handle being wrong.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Framework:**
 >
@@ -2242,7 +2242,7 @@
 >
 > **Learning:** Bad decisions happen. What matters is how you respond. Own it, learn from it, prevent recurrence. People trust engineers who can admit mistakes more than engineers who claim to never make them.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Database migration testing shortcut — моя biggest professional mistake.
 >
@@ -2326,7 +2326,7 @@
 >
 > I communicated this: "Here's what I'm doing in what order. Let me know if priorities should change."
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Framework:**
 >
@@ -2416,7 +2416,7 @@
 >
 > **Learning:** Short-term vs long-term is rarely either/or. The skill is finding approaches that serve both — incremental improvement, abstraction layers, parallel work. And when trade-offs are required, making them explicit.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Ситуация:** Frontend migration была fundamentally short-term vs long-term trade-off.
 >
@@ -2511,7 +2511,7 @@
 >
 > Decision was made in a week, documented, and never second-guessed.
 
-🇷🇺 **Русский:**
+**Русский:**
 
 > **Мой процесс:**
 >

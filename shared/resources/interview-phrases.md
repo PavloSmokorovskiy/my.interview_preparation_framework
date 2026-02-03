@@ -1,0 +1,327 @@
+# Interview Phrases / Фразы для интервью
+
+**Дежурные фразы для всех этапов интервью.**
+
+---
+
+## 1. Уточнение вопроса / Clarifying the Question
+
+### English:
+- "Just to make sure I understand correctly..."
+- "Could you clarify what you mean by...?"
+- "When you say X, do you mean...?"
+- "Let me make sure I understand the question..."
+- "Could you give me an example of what you're looking for?"
+- "Are there any specific constraints I should consider?"
+- "Is there a particular aspect you'd like me to focus on?"
+- "Before I dive in, I'd like to clarify a few things..."
+- "What's the expected scale we're designing for?"
+- "Should I consider any edge cases in particular?"
+
+### Русский:
+- "Чтобы убедиться, что я правильно понял..."
+- "Можете уточнить, что вы имеете в виду под...?"
+- "Когда вы говорите X, вы имеете в виду...?"
+- "Позвольте убедиться, что я правильно понимаю вопрос..."
+- "Можете привести пример того, что вы ищете?"
+- "Есть ли конкретные ограничения, которые я должен учитывать?"
+- "Есть ли конкретный аспект, на котором вы хотите, чтобы я сосредоточился?"
+- "Прежде чем начать, хотел бы уточнить несколько вещей..."
+- "Какой масштаб мы проектируем?"
+- "Должен ли я рассмотреть какие-либо особые edge cases?"
+
+---
+
+## 2. Запрос времени подумать / Asking for Time to Think
+
+### English:
+- "Let me think about this for a moment..."
+- "Give me a second to organize my thoughts..."
+- "That's a great question. Let me consider..."
+- "Let me take a moment to think through this..."
+- "I'd like to take a few seconds to structure my answer..."
+- "Let me process that for a moment..."
+- "Hmm, let me think about the best approach here..."
+- "Let me think through the trade-offs..."
+
+### Русский:
+- "Дайте мне подумать об этом..."
+- "Секунду, соберу мысли..."
+- "Отличный вопрос. Позвольте подумать..."
+- "Дайте мне момент обдумать это..."
+- "Хотел бы взять несколько секунд, чтобы структурировать ответ..."
+- "Позвольте мне обработать это..."
+- "Хм, дайте подумать о лучшем подходе..."
+- "Дайте мне обдумать компромиссы..."
+
+---
+
+## 3. Озвучивание предположений / Stating Assumptions
+
+### English:
+- "I'm going to assume that..."
+- "Let me state my assumptions..."
+- "For the purpose of this discussion, I'll assume..."
+- "My assumption here is that..."
+- "I'll assume X unless you tell me otherwise..."
+- "Please correct me if my assumptions are wrong..."
+- "Based on what you've told me, I'm assuming..."
+- "I'll work under the assumption that..."
+
+### Русский:
+- "Я предполагаю, что..."
+- "Позвольте озвучить мои предположения..."
+- "Для целей этого обсуждения я предположу..."
+- "Моё предположение здесь в том, что..."
+- "Я буду предполагать X, если вы не скажете иначе..."
+- "Поправьте меня, если мои предположения неверны..."
+- "Исходя из того, что вы сказали, я предполагаю..."
+- "Я буду работать с предположением, что..."
+
+---
+
+## 4. Думать вслух / Thinking Out Loud
+
+### English:
+- "Let me walk you through my thinking..."
+- "My thought process here is..."
+- "I'm thinking about this approach because..."
+- "The reason I'm considering this is..."
+- "What I'm trying to optimize for is..."
+- "The trade-off I see here is..."
+- "One option would be... Another would be..."
+- "I'm weighing between X and Y..."
+- "Let me break this down..."
+- "So, if I understand correctly..."
+
+### Русский:
+- "Позвольте провести вас через мой ход мыслей..."
+- "Мой мыслительный процесс здесь такой..."
+- "Я думаю об этом подходе, потому что..."
+- "Причина, по которой я рассматриваю это..."
+- "То, что я пытаюсь оптимизировать — это..."
+- "Компромисс, который я вижу здесь — это..."
+- "Один вариант — это... Другой — это..."
+- "Я выбираю между X и Y..."
+- "Позвольте разбить это на части..."
+- "Итак, если я правильно понимаю..."
+
+---
+
+## 5. Переход к следующему шагу / Transitioning
+
+### English:
+- "Moving on to the next step..."
+- "Now let me consider..."
+- "With that in mind, let's look at..."
+- "Building on that idea..."
+- "The next thing I want to address is..."
+- "Now, for the implementation..."
+- "Let me now focus on..."
+- "So that covers X. Now let me talk about Y..."
+
+### Русский:
+- "Переходя к следующему шагу..."
+- "Теперь позвольте рассмотреть..."
+- "С учётом этого, давайте посмотрим на..."
+- "Развивая эту идею..."
+- "Следующее, что я хочу обсудить — это..."
+- "Теперь, что касается реализации..."
+- "Позвольте теперь сосредоточиться на..."
+- "Итак, это покрывает X. Теперь поговорим о Y..."
+
+---
+
+## 6. Когда застрял / When Stuck
+
+### English:
+- "I'm not immediately sure, but let me think..."
+- "Let me approach this from a different angle..."
+- "I haven't seen this exact problem before, but..."
+- "Let me step back and reconsider..."
+- "What if I tried a simpler case first?"
+- "Let me try to break this into smaller parts..."
+- "I'm going to try a brute force approach first..."
+- "Can I have a hint about the expected approach?"
+
+### Русский:
+- "Я не сразу уверен, но позвольте подумать..."
+- "Позвольте подойти к этому с другой стороны..."
+- "Я не встречал именно эту задачу раньше, но..."
+- "Позвольте сделать шаг назад и пересмотреть..."
+- "Что если попробовать сначала более простой случай?"
+- "Позвольте попробовать разбить это на меньшие части..."
+- "Я сначала попробую brute force подход..."
+- "Можете дать подсказку об ожидаемом подходе?"
+
+---
+
+## 7. Подтверждение понимания / Confirming Understanding
+
+### English:
+- "So if I understand correctly..."
+- "Just to summarize what I've heard..."
+- "Let me repeat that back to make sure..."
+- "So the key requirements are..."
+- "Am I on the right track?"
+- "Does that match what you had in mind?"
+- "Is this the direction you were expecting?"
+
+### Русский:
+- "Итак, если я правильно понимаю..."
+- "Чтобы резюмировать услышанное..."
+- "Позвольте повторить, чтобы убедиться..."
+- "Итак, ключевые требования..."
+- "Я на правильном пути?"
+- "Это соответствует тому, что вы имели в виду?"
+- "Это то направление, которое вы ожидали?"
+
+---
+
+## 8. Заполнение пауз / Filling Silence
+
+### English:
+- "So..."
+- "Let me see..."
+- "Okay, so..."
+- "Right..."
+- "Hmm..."
+- "Alright..."
+- "Let me think about this..."
+- "One moment..."
+
+### Русский:
+- "Итак..."
+- "Дайте посмотреть..."
+- "Окей, так..."
+- "Так..."
+- "Хм..."
+- "Хорошо..."
+- "Дайте подумать..."
+- "Минуту..."
+
+---
+
+## 9. Обсуждение trade-offs / Discussing Trade-offs
+
+### English:
+- "The trade-off here is..."
+- "On one hand... on the other hand..."
+- "This approach is better for X but worse for Y..."
+- "The pros are... the cons are..."
+- "If we optimize for X, we sacrifice Y..."
+- "It depends on the use case, but..."
+- "Given the constraints, I would choose..."
+
+### Русский:
+- "Компромисс здесь в том, что..."
+- "С одной стороны... с другой стороны..."
+- "Этот подход лучше для X, но хуже для Y..."
+- "Плюсы — это... минусы — это..."
+- "Если оптимизировать под X, жертвуем Y..."
+- "Зависит от use case, но..."
+- "Учитывая ограничения, я бы выбрал..."
+
+---
+
+## 10. Завершение ответа / Concluding
+
+### English:
+- "So to summarize..."
+- "In conclusion..."
+- "The key takeaway is..."
+- "To wrap up..."
+- "The main points are..."
+- "Does that answer your question?"
+- "Is there anything you'd like me to elaborate on?"
+- "Should I go deeper into any part?"
+
+### Русский:
+- "Итак, подводя итог..."
+- "В заключение..."
+- "Ключевой вывод..."
+- "Завершая..."
+- "Основные моменты..."
+- "Это отвечает на ваш вопрос?"
+- "Есть что-то, что вы хотели бы, чтобы я раскрыл подробнее?"
+- "Углубиться в какую-либо часть?"
+
+---
+
+## 11. Behavioral вопросы — структура STAR
+
+### English:
+- "Let me give you a specific example..."
+- "I can think of a situation when..."
+- "This reminds me of a time when..."
+- "The situation was..."
+- "My task/role was..."
+- "The action I took was..."
+- "The result was..."
+- "Looking back, I learned..."
+
+### Русский:
+- "Позвольте привести конкретный пример..."
+- "Я могу вспомнить ситуацию, когда..."
+- "Это напоминает мне случай, когда..."
+- "Ситуация была такой..."
+- "Моя задача/роль была..."
+- "Действие, которое я предпринял..."
+- "Результат был..."
+- "Оглядываясь назад, я понял..."
+
+---
+
+## 12. Признание ограничений / Acknowledging Limitations
+
+### English:
+- "I'm not 100% sure, but my best guess is..."
+- "I haven't worked with X directly, but..."
+- "I'd need to verify this, but I believe..."
+- "This is outside my direct experience, but..."
+- "In a real scenario, I would..."
+- "I don't know the exact answer, but I would approach it by..."
+
+### Русский:
+- "Я не на 100% уверен, но моя лучшая догадка..."
+- "Я не работал напрямую с X, но..."
+- "Мне нужно было бы проверить, но я думаю..."
+- "Это за пределами моего прямого опыта, но..."
+- "В реальном сценарии я бы..."
+- "Я не знаю точный ответ, но подошёл бы к этому так..."
+
+---
+
+## 13. Вопросы интервьюеру / Questions to the Interviewer
+
+### English:
+- "Before I continue, could I ask..."
+- "Would you like me to focus on X or Y?"
+- "Should I consider X in my solution?"
+- "Do you want me to write actual code or pseudocode?"
+- "Is there a specific language you'd prefer?"
+- "Should I optimize for time or space?"
+- "Would you like me to walk through an example first?"
+
+### Русский:
+- "Прежде чем продолжить, могу спросить..."
+- "Хотите, чтобы я сосредоточился на X или Y?"
+- "Должен ли я учитывать X в решении?"
+- "Вы хотите реальный код или псевдокод?"
+- "Есть предпочтительный язык программирования?"
+- "Оптимизировать по времени или по памяти?"
+- "Хотите, чтобы я сначала прошёлся по примеру?"
+
+---
+
+## Quick Reference Card / Быстрая карточка
+
+| Ситуация | English | Русский |
+|----------|---------|---------|
+| Нужно время | "Let me think..." | "Дайте подумать..." |
+| Не понял | "Could you clarify...?" | "Можете уточнить...?" |
+| Предположение | "I'll assume that..." | "Предположу, что..." |
+| Застрял | "Let me try another approach..." | "Попробую другой подход..." |
+| Проверка | "Am I on the right track?" | "Я на правильном пути?" |
+| Переход | "Moving on to..." | "Переходя к..." |
+| Итог | "So to summarize..." | "Итак, подводя итог..." |
