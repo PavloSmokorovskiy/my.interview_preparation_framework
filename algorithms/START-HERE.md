@@ -1,130 +1,114 @@
-# START HERE: Algorithms (Quick + Deep Modes)
+# START HERE: Algorithms Understanding
 
-> **Если цель:** "понимать алгоритмы, которые спрашивают на Google coding interview" — иди по **Deep Mode**.
-
-> **Если цель:** "быстро освежить перед интервью" — используй **Quick Mode**.
-
----
-
-## Что здесь изменилось
-
-В разделе добавлен отдельный deep-трек:
-
-- `algorithms/DEEP-UNDERSTANDING-PATH.md` — полный маршрут чтения всех файлов, карта теории, чекпоинты понимания.
-
-Этот файл (`START-HERE.md`) теперь только навигация и выбор режима.
+> Этот файл - короткий теоретический конспект.  
+> Полный учебный материал находится в `algorithms/CORE-ALGORITHMS-THEORY.md`.
 
 ---
 
-## Структура раздела
+## 1. Что нужно понимать про алгоритмы на интервью
 
-```
-algorithms/
-│
-├── START-HERE.md                       ← Ты здесь
-├── DEEP-UNDERSTANDING-PATH.md          ← Глубокий трек (основной)
-├── COMPLETE-ALGORITHMS-GUIDE.md        ← Сводный обзор всех алгоритмов
-├── LEETCODE-PRACTICE.md                ← Каталог задач по паттернам
-├── self-test.md                        ← Проверка понимания
-│
-├── data-structures/                    ← 7 файлов фундаментальных структур
-├── by-category/                        ← 13 файлов алгоритмических категорий
-└── cheatsheets/
-    ├── big-o-cheatsheet.md
-    ├── pattern-recognition.md
-    └── quick-reference.md
-```
+На интервью оценивают не количество задач, а качество мышления:
+
+1. Верно ли решение.
+2. Почему оно верно.
+3. Какая сложность и почему.
+4. Какие есть ограничения и edge cases.
+
+Если ты можешь доказать инвариант и объяснить trade-off, это сильнее любого "заученного шаблона".
 
 ---
 
-## Deep Mode (рекомендуется)
+## 2. Базовая карта алгоритмов
 
-### Для кого
+### 2.1 Поиск
 
-- Ты хочешь **прочитать все файлы** раздела.
-- Тебе нужно не "знать названия", а понимать: почему алгоритм работает, где применим, где нет.
-- Ты хочешь уверенно отвечать на follow-up вопросы интервьюера.
+- Linear Search: O(n), когда структура не упорядочена.
+- Binary Search: O(log n), когда есть монотонность.
 
-### Порядок
+Главная идея Binary Search:
 
-1. Открой `algorithms/DEEP-UNDERSTANDING-PATH.md`.
-2. Иди строго по порядку 27 файлов.
-3. После каждого файла отвечай устно:
-- Что решает подход?
-- Какой инвариант?
-- Почему такая сложность?
-- Когда этот подход не подходит?
+- храним диапазон, где ответ точно может быть;
+- на каждом шаге безопасно выкидываем половину.
 
-### Definition of Done
+### 2.2 Сортировки
 
-- Прочитаны все файлы `algorithms/`.
-- `self-test.md`: стабильно 40+/50.
-- По Tier 1 алгоритмам (binary search, graph traversal, DP, heap, two pointers, sliding window, trees, hashing) можешь объяснить решение **без кода**.
+Ключевая троица:
 
----
+1. Merge Sort: стабильный O(n log n), но O(n) памяти.
+2. Quick Sort: обычно очень быстрый, но worst case O(n^2).
+3. Heap Sort: гарантированный O(n log n), in-place, но хуже локальность.
 
-## Quick Mode (если времени мало)
+### 2.3 Графы
 
-### Шаг 1: Сжатая база
+- BFS: слои, кратчайший путь в невзвешенном графе.
+- DFS: глубина, циклы, компоненты, топологическая логика.
+- Dijkstra: shortest path при неотрицательных весах.
+- Topological Sort: порядок зависимостей в DAG.
 
-1. `algorithms/COMPLETE-ALGORITHMS-GUIDE.md`
-2. `algorithms/cheatsheets/big-o-cheatsheet.md`
-3. `algorithms/cheatsheets/pattern-recognition.md`
+### 2.4 Деревья
 
-### Шаг 2: Must-know темы
+- Traversals: preorder/inorder/postorder/level-order.
+- BST: ordered structure (`left < node < right`).
+- Типовые темы: depth, LCA, validate BST, path problems.
 
-4. `algorithms/by-category/02-searching.md`
-5. `algorithms/by-category/03-graphs.md`
-6. `algorithms/by-category/04-trees.md`
-7. `algorithms/by-category/05-dynamic-programming.md`
-8. `algorithms/by-category/09-two-pointers.md`
-9. `algorithms/by-category/10-sliding-window.md`
+### 2.5 DP
 
-### Шаг 3: Проверка
+DP применяем, когда есть:
 
-10. `algorithms/self-test.md`
-11. Слабые темы добрать через соответствующие файлы в `by-category/` и `data-structures/`.
+1. Overlapping subproblems.
+2. Optimal substructure.
 
----
+Критически важно правильно выбрать состояние (state).
 
-## Как читать, чтобы было глубокое понимание (а не механика)
+### 2.6 Greedy
 
-На каждый алгоритм фиксируй 5 пунктов:
+Greedy работает только когда локальный выбор безопасен глобально.  
+Нужен аргумент корректности (exchange/cut property), иначе это гипотеза, а не решение.
 
-1. **Проблема:** какой тип задач он решает.
-2. **Идея:** ключевая мысль в 1-2 предложениях.
-3. **Инвариант:** что сохраняется истинным на каждом шаге.
-4. **Сложность:** откуда берутся `time` и `space`.
-5. **Ограничения:** где подход ломается.
+### 2.7 Two Pointers / Sliding Window
 
-Если один из пунктов не можешь объяснить устно, тема ещё не закрыта.
+- Two Pointers убирает лишние вложенные циклы за счёт контролируемого движения границ.
+- Sliding Window работает для contiguous подмассивов/подстрок.
 
----
+### 2.8 Backtracking
 
-## Что обычно спрашивают в Google (ядро)
+Полный перебор с откатом состояния и ранним отсечением (pruning).
 
-1. Binary Search + вариации
-2. BFS/DFS, shortest path, topological sort
-3. Tree/BST traversal и tree-рекурсия
-4. HashMap/Set patterns
-5. Two Pointers + Sliding Window
-6. Heap/Priority Queue
-7. Dynamic Programming базовые паттерны
+### 2.9 Heap / Hash / Union-Find
 
-Где читать это ядро:
-- `algorithms/by-category/02-searching.md`
-- `algorithms/by-category/03-graphs.md`
-- `algorithms/by-category/04-trees.md`
-- `algorithms/by-category/05-dynamic-programming.md`
-- `algorithms/by-category/09-two-pointers.md`
-- `algorithms/by-category/10-sliding-window.md`
-- `algorithms/data-structures/hash-tables.md`
-- `algorithms/data-structures/heaps.md`
+- Heap: быстрый доступ к экстремуму, top-k, поток.
+- HashMap/Set: O(1) average lookup/count/membership.
+- Union-Find: динамические компоненты связности.
 
 ---
 
-## Начни сейчас
+## 3. Инварианты, которые нужно уметь объяснять
 
-1. Открой `algorithms/DEEP-UNDERSTANDING-PATH.md`.
-2. Пройди Фазу 0 и Фазу 1 полностью.
-3. Не переходи к LeetCode, пока не можешь устно объяснить ядро Tier 1.
+1. Binary Search: ответ всегда остаётся внутри текущего диапазона.
+2. BFS: первый найденный путь в вершину минимален по числу рёбер.
+3. Dijkstra: зафиксированная вершина уже имеет оптимальную дистанцию.
+4. Sliding Window: окно поддерживает нужные ограничения счётчиков.
+5. DP: `dp[state]` хранит полный ответ для этой подзадачи.
+
+---
+
+## 4. Частые ошибки на интервью
+
+1. Выбор алгоритма до уточнения ограничений (`n`, диапазон значений, online/offline).
+2. Путаница "работает на примере" vs "корректно всегда".
+3. Нет обоснования сложности.
+4. Игнорирование edge cases.
+5. Механическое применение DP/Greedy без проверки предпосылок.
+
+---
+
+## 5. Что открыть дальше (материал внутри проекта)
+
+Если хочешь глубоко изучить теорию, открывай:
+
+1. `algorithms/CORE-ALGORITHMS-THEORY.md` - расширенный теоретический материал.
+2. `algorithms/COMPLETE-ALGORITHMS-GUIDE.md` - обзор алгоритмов по категориям.
+3. `algorithms/by-category/` - детальная проработка категорий.
+4. `algorithms/data-structures/` - фундамент структур данных.
+
+Все материалы находятся внутри этого репозитория.

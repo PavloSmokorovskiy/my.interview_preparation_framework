@@ -210,3 +210,54 @@ Min-heap для K largest, Max-heap для K smallest (интуитивно на
 - **K-th largest:** Min-heap размера K
 - **Median stream:** Two heaps (max-heap + min-heap)
 - **Merge K lists:** Min-heap с K элементами
+
+---
+
+## Deep Theory Layer
+
+### 1) Heap invariant
+
+Для min-heap:
+
+- каждый узел <= своих детей.
+
+Это локальный инвариант, который гарантирует глобально:
+
+- минимум в корне.
+
+Но не гарантирует полный порядок между соседними ветками.
+
+### 2) Почему build-heap O(n)
+
+Интуитивно:
+
+- большинство узлов близко к листьям и требуют мало sift-down шагов.
+
+Суммарная работа по уровням даёт линейную асимптотику,
+хотя отдельный sift-down может быть `O(log n)`.
+
+### 3) Heap vs BST
+
+Heap:
+
+- лучший для repeated extract-min/max.
+
+BST:
+
+- лучший для ordered operations (`next`, `range`, search by key).
+
+### 4) Top-K стратегии
+
+1. Min-heap размера `k`: `O(n log k)`.
+2. Full sort: `O(n log n)`.
+3. Quickselect average `O(n)`.
+
+Выбор зависит от k, стабильности, необходимости полного порядка.
+
+### 5) Контрольные вопросы
+
+1. Почему heap не подходит для поиска произвольного элемента за `O(log n)`?
+2. Почему build-heap линейный?
+3. Когда min-heap лучше max-heap в задаче top-k?
+4. Какие риски у lazy deletion в priority queue?
+5. Почему heap operations часто быстрее дерева по константам?

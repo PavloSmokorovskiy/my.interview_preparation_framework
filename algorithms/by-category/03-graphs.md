@@ -386,3 +386,97 @@ BLACK = обработана
 - **Topological:** DAG, DFS + стек или Kahn's BFS
 - **Union-Find:** Связные компоненты, почти O(1)
 - **MST:** Kruskal (сорт. рёбер) или Prim (grow from vertex)
+
+---
+
+## Deep Theory Layer
+
+### 1) Моделирование: что считать вершиной
+
+Критическая часть graph задач - корректно выбрать state graph.
+
+Примеры state-as-node:
+
+1. `(x, y)` в grid.
+2. `(word, steps)` в word ladder вариантах.
+3. `(city, stops_used)` в constrained shortest path.
+4. `(node, mask)` в bitmask-state graph.
+
+Неверный state почти всегда делает правильный алгоритм бесполезным.
+
+### 2) Инварианты BFS/DFS
+
+#### BFS invariant
+
+Когда вершина впервые извлекается из queue:
+
+- найден кратчайший путь по числу рёбер в невзвешенном графе.
+
+#### DFS invariant
+
+Текущий recursion stack:
+
+- описывает текущий путь от root до active node.
+- back edge в directed graph указывает на цикл.
+
+### 3) Dijkstra correctness sketch
+
+Условие: все веса `>= 0`.
+
+Инвариант:
+
+- когда вершина `u` выбрана как минимальная по текущей дистанции, `dist[u]` финален.
+
+Почему:
+
+- любой альтернативный путь через ещё не выбранные вершины не может стать меньше, т.к. добавляет неотрицательные веса к уже не меньшим дистанциям.
+
+### 4) Когда Dijkstra ломается
+
+При отрицательных рёбрах "финальность" нарушается:
+
+- вершина, уже извлечённая как "лучшая", может позже улучшиться.
+
+Тогда нужны:
+
+- Bellman-Ford,
+- SPFA variants (осторожно с worst-case),
+- Johnson (для all-pairs с reweighting).
+
+### 5) Topological Sort и DAG
+
+Topological ordering существует тогда и только тогда, когда граф ацикличен.
+
+Практический тест через Kahn:
+
+- если обработано меньше `V` вершин -> есть цикл.
+
+### 6) Complexity by representation
+
+Adjacency list vs matrix меняет реальные costs:
+
+1. BFS/DFS на list: `O(V + E)`.
+2. BFS/DFS на matrix: `O(V^2)`.
+3. Проверка ребра `u->v`: matrix `O(1)`, list `O(deg(u))`.
+
+Умение выбрать представление часто важнее выбора алгоритма.
+
+### 7) MST: cut intuition
+
+Для любого "разреза" графа минимальное ребро, пересекающее разрез, безопасно включать в MST.
+
+Из этого следует корректность greedy-step в Kruskal/Prim.
+
+### 8) Interview follow-up
+
+1. Граф не помещается в память -> external/streaming strategies.
+2. Нужны динамические обновления рёбер -> dynamic connectivity structures.
+3. Нужны path queries online -> preprocessing (LCA, binary lifting, HLD).
+
+### 9) Контрольные вопросы
+
+1. Почему BFS shortest только для невзвешенного?
+2. Почему Kahn обнаруживает цикл?
+3. Что меняется в сложностях при matrix representation?
+4. Почему union-find подходит для undirected cycle detection, но не для directed?
+5. Когда выбирать Bellman-Ford вместо Dijkstra?

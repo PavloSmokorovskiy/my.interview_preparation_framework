@@ -305,3 +305,50 @@ Cycle detection разный для directed и undirected графов!
 - **Topological:** DAG, порядок зависимостей
 - **Union-Find:** Связные компоненты, Kruskal
 - **Cycle:** Undirected — Union-Find, Directed — DFS с цветами
+
+---
+
+## Deep Theory Layer
+
+### 1) Graph representation определяет производительность
+
+Выбор representation - не деталь, а часть алгоритма.
+
+1. Sparse graph -> adjacency list.
+2. Dense graph -> matrix может быть уместнее.
+3. Edge-centric задачи -> edge list.
+
+### 2) Directed vs undirected мышление
+
+Многие ошибки происходят из смешения моделей:
+
+- cycle detection,
+- degree semantics,
+- топологические свойства.
+
+Всегда фиксируй тип графа до выбора метода.
+
+### 3) Weighted semantics
+
+Наличие весов сразу меняет класс корректных алгоритмов:
+
+1. unweighted -> BFS shortest.
+2. weighted non-negative -> Dijkstra.
+3. negative edges -> Bellman-Ford class.
+
+### 4) Components and connectivity
+
+Связность бывает:
+
+1. connected components (undirected),
+2. strongly connected components (directed).
+
+Это разные задачи с разными алгоритмами.
+
+### 5) Контрольные вопросы
+
+1. Почему adjacency matrix может "убить" BFS на sparse graph?
+2. Когда edge list удобнее list/matrix?
+3. Почему directed cycle detection требует другой логики?
+4. Когда выбрать union-find вместо DFS?
+5. Что меняется в shortest path при добавлении весов?

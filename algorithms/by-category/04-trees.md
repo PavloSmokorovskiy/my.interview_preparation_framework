@@ -458,3 +458,92 @@ TreeNode build(int[] nums, int left, int right) {
 - **Diameter:** Отслеживай max(left_h + right_h)
 - **Serialize:** Preorder + null markers
 - **Construct:** Root из preorder, split по inorder
+
+---
+
+## Deep Theory Layer
+
+### 1) Recursive contract для tree-задач
+
+Хорошая tree-рекурсия начинается с контракта функции:
+
+- "Что именно возвращает функция для поддерева?"
+
+Примеры:
+
+1. Высота поддерева.
+2. Максимальная path sum в поддереве.
+3. Валидность BST + диапазон.
+4. LCA-кандидат.
+
+Без точного контракта рекурсия быстро становится неуправляемой.
+
+### 2) Top-down vs Bottom-up на деревьях
+
+1. Top-down:
+- передаём контекст вниз (bounds, prefix sums, depth).
+
+2. Bottom-up:
+- агрегируем информацию детей вверх (height, best path, balanced flag).
+
+Многие hard-задачи требуют комбинированного подхода.
+
+### 3) BST validation: формальная причина ошибки "только parent"
+
+Проверка `node.left < node < node.right` локально недостаточна.
+
+Нужно глобальное ограничение диапазоном:
+
+- `min < node.val < max` для каждого узла.
+
+Иначе можно пропустить нарушение в глубине поддерева.
+
+### 4) Traversal как инструмент состояния
+
+1. Inorder:
+- проверка отсортированности BST,
+- k-th элемент,
+- range queries по BST.
+
+2. Postorder:
+- вычисление метрик, зависящих от детей.
+
+3. Level-order:
+- минимальная глубина,
+- задачи по уровням, "первый узел уровня".
+
+### 5) Tree DP (очень частый follow-up)
+
+Суть:
+
+- в каждом узле хранить несколько состояний.
+
+Классика:
+
+- House Robber III: `take(node)` и `skip(node)`.
+- Camera Cover: состояния покрытия.
+
+Это мост между "tree" и "DP" мышлением.
+
+### 6) Complexity caveats
+
+В деревьях операции часто записывают как `O(log n)` или `O(h)`.
+
+Важно:
+
+- `h = O(log n)` только при балансировке.
+- в худшем BST `h = O(n)`.
+
+### 7) Interview follow-up
+
+1. Рекурсия переполняет стек -> iterative traversal.
+2. Много query на одном дереве -> preprocessing.
+3. Изменения дерева online -> балансировка/augmented structures.
+
+### 8) Контрольные вопросы
+
+1. Почему inorder в BST отсортирован?
+2. В чём разница между depth и height?
+3. Почему validate BST требует диапазонов?
+4. Когда LCA можно сделать быстрее, чем O(h) per query?
+5. Как выбрать traversal под задачу?

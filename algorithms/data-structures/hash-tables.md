@@ -203,3 +203,53 @@ count[x] = count.get(x, 0) + 1
 - **HashMap vs TreeMap:** O(1) без порядка vs O(log n) с порядком
 - **Паттерны:** Counting, Two Sum, Grouping, Prefix Sum
 - **Worst case:** O(n) — плохая hash функция
+
+---
+
+## Deep Theory Layer
+
+### 1) Что реально даёт hash table
+
+Hash table даёт expected `O(1)`, а не гарантированное.
+
+Причина:
+
+- качество hash function,
+- load factor,
+- стратегия разрешения коллизий.
+
+### 2) Load factor как регулятор производительности
+
+Высокий load factor уменьшает память, но увеличивает коллизии.
+
+Resize/rehash - это механизм удержания expected `O(1)`.
+
+### 3) Chaining vs Open Addressing
+
+Chaining:
+
+- проще удаление,
+- дополнительная память на указатели.
+
+Open addressing:
+
+- лучше locality,
+- сложнее delete/tombstones.
+
+### 4) Когда ordered map лучше hash map
+
+Если нужны:
+
+1. range queries,
+2. `lower_bound`/`upper_bound`,
+3. детерминированный порядок.
+
+Тогда `O(log n)` tree-структура предпочтительнее.
+
+### 5) Контрольные вопросы
+
+1. Почему average `O(1)` не равно worst-case `O(1)`?
+2. Как load factor влияет на латентность операций?
+3. Почему mutable key опасен?
+4. Когда hash map хуже balanced tree на практике?
+5. Что такое hash flooding?

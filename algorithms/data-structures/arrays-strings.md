@@ -137,3 +137,50 @@ result = "".join(chars)
 - **String:** immutable, конкатенация = O(n)
 - **Dynamic Array:** amortized O(1) append
 - **Паттерны:** Two Pointers, Sliding Window, Prefix Sum
+
+---
+
+## Deep Theory Layer
+
+### 1) Array как модель памяти
+
+Array даёт `O(1)` доступ по индексу, потому что элементы лежат непрерывно,
+и адрес вычисляется арифметически (`base + i * element_size`).
+
+Следствие:
+
+- быстрый random access,
+- дорогое вставление в середину из-за сдвига хвоста.
+
+### 2) Dynamic array: амортизация
+
+Удвоение capacity даёт амортизированное `O(1)` append.
+
+Интуиция:
+
+- редкие дорогие копирования "размазываются" по множеству дешёвых append.
+
+### 3) Strings и неизменяемость
+
+Во многих языках string immutable.
+
+Практические последствия:
+
+1. Конкатенация в цикле может быть квадратичной.
+2. Нужно использовать builder/buffer-подход.
+
+### 4) Prefix structures
+
+Prefix sums/prefix hashes превращают:
+
+- повторные range queries из `O(n)` в `O(1)` после `O(n)` preprocessing.
+
+Это базовый паттерн "время за память".
+
+### 5) Контрольные вопросы
+
+1. Почему динамический массив не делает insert middle быстрым?
+2. Когда append может быть `O(n)` и почему это не противоречит амортизации?
+3. Почему string builder важен для performance?
+4. Когда prefix sums не применимы?
+5. Чем contiguous memory полезна для CPU cache?

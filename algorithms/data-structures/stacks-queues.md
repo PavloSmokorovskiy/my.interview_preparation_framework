@@ -226,3 +226,53 @@ Deque для sliding window min/max.
 - **Deque:** Оба конца, sliding window min/max
 - **Priority Queue:** По приоритету, heap-based
 - **Monotonic:** O(n) для "next greater/smaller" и sliding window задач
+
+---
+
+## Deep Theory Layer
+
+### 1) Stack/Queue как модели порядка
+
+Stack:
+
+- LIFO,
+- естественен для recursion simulation и "отката".
+
+Queue:
+
+- FIFO,
+- естественен для level-order и потоковой обработки.
+
+### 2) Monotonic stack/deque
+
+Смысл monotonic structures:
+
+- хранить только "кандидатов", которые ещё могут стать ответом.
+
+Все доминируемые элементы удаляются сразу,
+что даёт линейную сложность для next greater/window max.
+
+### 3) Amortized analysis для deque-паттернов
+
+Каждый элемент:
+
+1. добавляется один раз,
+2. удаляется не более одного раза.
+
+Отсюда total `O(n)`.
+
+### 4) Priority queue vs queue
+
+Priority queue меняет порядок обработки:
+
+- не по времени прихода, а по ключу/приоритету.
+
+Это критично для Dijkstra, merge streams, scheduling.
+
+### 5) Контрольные вопросы
+
+1. Почему BFS требует queue, а не stack?
+2. Как monotonic stack убирает квадратичность?
+3. Когда deque лучше двух отдельных структур?
+4. Почему priority queue не равна sorted array?
+5. Какие риски у circular queue индексов?
