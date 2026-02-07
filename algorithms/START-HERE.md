@@ -1,178 +1,130 @@
-# START HERE: Алгоритмы за 5 минут
+# START HERE: Algorithms (Quick + Deep Modes)
 
-> **Время изучения:** ~5 минут (этот файл), ~3-4 часа (полный раздел Algorithms)
+> **Если цель:** "понимать алгоритмы, которые спрашивают на Google coding interview" — иди по **Deep Mode**.
 
-**Цель:** Знать, что существует. Понимать, когда применять. Не услышать про алгоритм впервые на собеседовании.
+> **Если цель:** "быстро освежить перед интервью" — используй **Quick Mode**.
 
 ---
 
-## Что здесь есть
+## Что здесь изменилось
+
+В разделе добавлен отдельный deep-трек:
+
+- `algorithms/DEEP-UNDERSTANDING-PATH.md` — полный маршрут чтения всех файлов, карта теории, чекпоинты понимания.
+
+Этот файл (`START-HERE.md`) теперь только навигация и выбор режима.
+
+---
+
+## Структура раздела
 
 ```
 algorithms/
 │
-├── START-HERE.md                    ← Ты здесь
-├── COMPLETE-ALGORITHMS-GUIDE.md     ← ГЛАВНЫЙ ФАЙЛ (все алгоритмы)
+├── START-HERE.md                       ← Ты здесь
+├── DEEP-UNDERSTANDING-PATH.md          ← Глубокий трек (основной)
+├── COMPLETE-ALGORITHMS-GUIDE.md        ← Сводный обзор всех алгоритмов
+├── LEETCODE-PRACTICE.md                ← Каталог задач по паттернам
+├── self-test.md                        ← Проверка понимания
 │
-├── by-category/                     ← Детальные гайды (13 категорий)
-│   ├── 01-sorting.md               ← Сортировки
-│   ├── 02-searching.md             ← Поиск
-│   ├── 03-graphs.md                ← Графы (BFS, DFS, Dijkstra...)
-│   ├── 04-trees.md                 ← Деревья
-│   ├── 05-dynamic-programming.md   ← DP
-│   ├── 06-greedy.md                ← Жадные алгоритмы
-│   ├── 07-divide-and-conquer.md    ← Разделяй и властвуй
-│   ├── 08-backtracking.md          ← Перебор с возвратом
-│   ├── 09-two-pointers.md          ← Два указателя
-│   ├── 10-sliding-window.md        ← Скользящее окно
-│   ├── 11-string-algorithms.md     ← Строковые алгоритмы
-│   ├── 12-bit-manipulation.md      ← Битовые операции
-│   └── 13-math-algorithms.md       ← Математические алгоритмы
-│
-├── data-structures/                 ← Структуры данных
-│   ├── arrays-strings.md
-│   ├── linked-lists.md
-│   ├── stacks-queues.md
-│   ├── hash-tables.md
-│   ├── heaps.md
-│   ├── trees-tries.md
-│   └── graphs.md
-│
-├── cheatsheets/
-│   ├── big-o-cheatsheet.md         ← Сложности всех алгоритмов
-│   ├── pattern-recognition.md      ← Как выбрать алгоритм по условию
-│   └── quick-reference.md          ← Краткая справка
-│
-└── self-test.md                     ← Самопроверка
+├── data-structures/                    ← 7 файлов фундаментальных структур
+├── by-category/                        ← 13 файлов алгоритмических категорий
+└── cheatsheets/
+    ├── big-o-cheatsheet.md
+    ├── pattern-recognition.md
+    └── quick-reference.md
 ```
 
 ---
 
-## Как изучать
+## Deep Mode (рекомендуется)
 
-### День 1-2: Обзор
-1. **Прочитай `COMPLETE-ALGORITHMS-GUIDE.md`** — это обзор всего
-2. **Выучи Big-O:** `cheatsheets/big-o-cheatsheet.md`
-3. **Пойми pattern recognition:** `cheatsheets/pattern-recognition.md`
+### Для кого
 
-### День 3-4: Углубление
-1. **Структуры данных:** `data-structures/` — основа всего
-2. **Ключевые категории:**
-   - Sorting (знать когда какой)
-   - Graphs (BFS/DFS — must know)
-   - Dynamic Programming (паттерны)
+- Ты хочешь **прочитать все файлы** раздела.
+- Тебе нужно не "знать названия", а понимать: почему алгоритм работает, где применим, где нет.
+- Ты хочешь уверенно отвечать на follow-up вопросы интервьюера.
 
-### День 5+: Практика
-1. **Пройди `self-test.md`**
-2. **Повтори слабые места** по категориям
+### Порядок
 
----
+1. Открой `algorithms/DEEP-UNDERSTANDING-PATH.md`.
+2. Иди строго по порядку 27 файлов.
+3. После каждого файла отвечай устно:
+- Что решает подход?
+- Какой инвариант?
+- Почему такая сложность?
+- Когда этот подход не подходит?
 
-## Мнемоника сложностей
+### Definition of Done
 
-```
-O(1)        — Константа (доступ по индексу)
-O(log n)    — Логарифм (binary search, сбалансированные деревья)
-O(n)        — Линейный (один проход)
-O(n log n)  — Оптимальная сортировка (merge, quick, heap)
-O(n²)       — Квадрат (вложенные циклы, простые сортировки)
-O(2ⁿ)       — Экспонента (рекурсия без memo, подмножества)
-O(n!)       — Факториал (перестановки)
-```
-
-**Запомни:** `1 < log n < n < n log n < n² < 2ⁿ < n!`
+- Прочитаны все файлы `algorithms/`.
+- `self-test.md`: стабильно 40+/50.
+- По Tier 1 алгоритмам (binary search, graph traversal, DP, heap, two pointers, sliding window, trees, hashing) можешь объяснить решение **без кода**.
 
 ---
 
-## 5 вопросов для выбора алгоритма
+## Quick Mode (если времени мало)
 
-1. **Данные отсортированы?** → Binary Search
-2. **Нужен кратчайший путь?** → BFS (невзвешенный), Dijkstra (взвешенный)
-3. **Есть оптимальная подструктура?** → Dynamic Programming
-4. **Локальный оптимум = глобальный?** → Greedy
-5. **Нужны все варианты?** → Backtracking / DFS
+### Шаг 1: Сжатая база
 
----
+1. `algorithms/COMPLETE-ALGORITHMS-GUIDE.md`
+2. `algorithms/cheatsheets/big-o-cheatsheet.md`
+3. `algorithms/cheatsheets/pattern-recognition.md`
 
-## Категории алгоритмов — краткий обзор
+### Шаг 2: Must-know темы
 
-| Категория | Когда использовать | Примеры |
-|-----------|-------------------|---------|
-| **Sorting** | Нужно упорядочить | Merge Sort, Quick Sort |
-| **Searching** | Найти элемент | Binary Search, BFS/DFS |
-| **Graphs** | Связи между объектами | Dijkstra, Topological Sort |
-| **Trees** | Иерархические данные | Traversals, BST |
-| **DP** | Оптимизация с подзадачами | Knapsack, LCS |
-| **Greedy** | Локальный выбор оптимален | Activity Selection |
-| **Two Pointers** | Массив, ищем пару | Two Sum (sorted) |
-| **Sliding Window** | Подмассив/подстрока | Max sum subarray |
-| **Backtracking** | Все комбинации | N-Queens, Subsets |
-| **Bit Manipulation** | Работа с битами | XOR, маски, степени 2 |
-| **Math** | Числовые задачи | GCD, простые числа, модульная арифметика |
+4. `algorithms/by-category/02-searching.md`
+5. `algorithms/by-category/03-graphs.md`
+6. `algorithms/by-category/04-trees.md`
+7. `algorithms/by-category/05-dynamic-programming.md`
+8. `algorithms/by-category/09-two-pointers.md`
+9. `algorithms/by-category/10-sliding-window.md`
+
+### Шаг 3: Проверка
+
+10. `algorithms/self-test.md`
+11. Слабые темы добрать через соответствующие файлы в `by-category/` и `data-structures/`.
 
 ---
 
-## Структуры данных — когда какую
+## Как читать, чтобы было глубокое понимание (а не механика)
 
-| Структура | O(search) | O(insert) | Когда использовать |
-|-----------|-----------|-----------|-------------------|
-| Array | O(n) | O(1)* | Индексный доступ |
-| Hash Table | O(1) | O(1) | Быстрый lookup по ключу |
-| BST | O(log n) | O(log n) | Отсортированные данные |
-| Heap | O(n) | O(log n) | Min/Max быстро |
-| Stack | O(n) | O(1) | LIFO: undo, скобки |
-| Queue | O(n) | O(1) | FIFO: BFS, tasks |
+На каждый алгоритм фиксируй 5 пунктов:
 
-*amortized для динамического массива
+1. **Проблема:** какой тип задач он решает.
+2. **Идея:** ключевая мысль в 1-2 предложениях.
+3. **Инвариант:** что сохраняется истинным на каждом шаге.
+4. **Сложность:** откуда берутся `time` и `space`.
+5. **Ограничения:** где подход ломается.
 
----
-
-## Приоритет изучения
-
-### Must Know (80% задач)
-1. **Binary Search** — поиск в отсортированном
-2. **BFS/DFS** — обход графов и деревьев
-3. **Hash Table** — O(1) lookup
-4. **Two Pointers** — работа с массивами
-5. **Sliding Window** — подмассивы/подстроки
-6. **Basic DP** — Fibonacci pattern, grid traversal
-
-### Good to Know
-7. Merge Sort / Quick Sort — оптимальная сортировка
-8. Dijkstra — кратчайший путь с весами
-9. Heap — priority queue
-10. Trie — работа с префиксами
-11. Union-Find — связные компоненты
-
-### Nice to Know
-12. Topological Sort — зависимости
-13. Segment Tree — range queries
-14. KMP — pattern matching
+Если один из пунктов не можешь объяснить устно, тема ещё не закрыта.
 
 ---
 
-## Типичные ошибки
+## Что обычно спрашивают в Google (ядро)
 
-### 1. Забыть про edge cases
-- Пустой массив
-- Один элемент
-- Все элементы одинаковые
-- Отрицательные числа
+1. Binary Search + вариации
+2. BFS/DFS, shortest path, topological sort
+3. Tree/BST traversal и tree-рекурсия
+4. HashMap/Set patterns
+5. Two Pointers + Sliding Window
+6. Heap/Priority Queue
+7. Dynamic Programming базовые паттерны
 
-### 2. Неправильная сложность
-- HashMap != TreeMap (O(1) vs O(log n))
-- ArrayList.add(0, x) = O(n), не O(1)
-
-### 3. Путаница BFS vs DFS
-- **BFS** — кратчайший путь (невзвешенный граф)
-- **DFS** — обход всех вершин, поиск цикла
+Где читать это ядро:
+- `algorithms/by-category/02-searching.md`
+- `algorithms/by-category/03-graphs.md`
+- `algorithms/by-category/04-trees.md`
+- `algorithms/by-category/05-dynamic-programming.md`
+- `algorithms/by-category/09-two-pointers.md`
+- `algorithms/by-category/10-sliding-window.md`
+- `algorithms/data-structures/hash-tables.md`
+- `algorithms/data-structures/heaps.md`
 
 ---
 
 ## Начни сейчас
 
-1. Открой [`COMPLETE-ALGORITHMS-GUIDE.md`](COMPLETE-ALGORITHMS-GUIDE.md)
-2. Прочитай обзор каждой категории
-3. Выучи Big-O из [`cheatsheets/big-o-cheatsheet.md`](cheatsheets/big-o-cheatsheet.md)
-
-**Удачи!**
+1. Открой `algorithms/DEEP-UNDERSTANDING-PATH.md`.
+2. Пройди Фазу 0 и Фазу 1 полностью.
+3. Не переходи к LeetCode, пока не можешь устно объяснить ядро Tier 1.
